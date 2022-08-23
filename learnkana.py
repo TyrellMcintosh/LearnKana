@@ -1,7 +1,7 @@
 #|==========================================================================================|
 #| Name: learnkana.py                                                                       |
 #|                                                                                          |
-#| Written By: Tyrell Mcintosh - August 2022                                                |
+#| Developed By: Tyrell Mcintosh - August 2022                                              |
 #|                                                                                          |
 #| Purpose: To learn hiragana, katakana, and kanji all in one place and track the results   |
 #|           of user performance.                                                           |
