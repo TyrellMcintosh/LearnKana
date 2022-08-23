@@ -1,0 +1,14 @@
+家族-kazoku
+日本-nihon
+日本語-nihongo
+犬-inu
+一人-hitori
+二人-futari
+三人-sannin
+四人-yonnin
+五人-gonin
+六人-dokunin
+七人-shichinin
+八人-hachinin
+九人-kyuunin
+十人-jyuunin
