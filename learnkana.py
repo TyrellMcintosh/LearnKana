@@ -12,8 +12,10 @@
 #|            japanese - the japanese part of the partitioned line                          |
 #|            romaji - the romaji part of the partition line                                |
 #|            score - the percantage of questions answered correctly                        |
+#|            elapsed - the seconds it took to finish the task                              |
 #|------------------------------------------------------------------------------------------|
 import random
+import time
 
 #User input taken to determine the task to be performed
 print("Which task today?\n 1: Basic Hiragana\n 2: Hiragana with Dakuten&Handakuten\n", \
@@ -50,6 +52,7 @@ match kana:
 
 # Variables to keep track of performance
 correct = incorrect = count = 0
+start = time.time()
 
 # Loop that prints each line to prompt the user for an answer to the question
 while True:
@@ -73,8 +76,10 @@ while True:
     if (answer2 == 'x' or not txtfile):
         break
 
+finish = time.time()
+elapsed = "{:.2f}".format(finish - start)
 score = "{:.0%}".format(correct / count)
-print("You finished with a score of:",score)
+print("You finished with a score of {} and took {} seconds to finish.".format(score,elapsed))
 
     
     
