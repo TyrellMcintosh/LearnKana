@@ -30,7 +30,7 @@ def my_function():
     #User input taken to determine the task to be performed
     print("Which task today?\n 1: Basic Hiragana\n 2: Hiragana with Dakuten&Handakuten\n", \
       "3: Basic Katakana\n 4: Katakana with Dakuten&Handakuten\n 5: All Kana\n", \
-      "6: Kanji\n 7: JLPT N5 Vocabulary (in progress)")
+      "6: Kanji\n")
     kana = input("You decide > ")
 
     # Open textfile and read the lines into a list if the user hasn't picked kanji
@@ -101,6 +101,6 @@ while (trigger!= 'x'):
 
     print("You finished with a score of {} and took {} seconds to finish.".format(score,elapsed))
     print("The following are the ones you got incorrect:",*wrong)
-    trigger = input("Would you like to play again? Press enter to proceed to menu or x to quit\n")    
+    trigger = input("Would you like to play again? Press enter to proceed to menu or x to quit \n")    
 
 print("Thanks for playing!")
