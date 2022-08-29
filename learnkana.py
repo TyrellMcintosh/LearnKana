@@ -70,7 +70,7 @@ def my_function():
         count += 1
         randline = random.choice(txtfile)
         japanese = randline.partition("-")[0]
-        answer = input("\nWhat does {} sound like?".format(japanese))
+        answer = input("\nWhat does {} sound like? ".format(japanese))
         romaji = randline.partition("-")[2]
         if (answer == romaji):
             correct += 1
@@ -100,7 +100,8 @@ while (trigger!= 'x'):
     elapsed, score = my_calculations(start,finish,correct,count)
 
     print("You finished with a score of {} and took {} seconds to finish.".format(score,elapsed))
-    print("The following are the ones you got incorrect:",*wrong)
+    if (wrong):
+        print("The following are the ones you got incorrect:",*wrong)
     trigger = input("Would you like to play again? Press enter to proceed to menu or x to quit \n")    
 
 print("Thanks for playing!")
